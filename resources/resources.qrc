@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>cs_source.ico</file>
+        <file>cs_source_tray.png</file>
+        <file>app_icon.svg</file>
+        <file>default_rules.json</file>
+    </qresource>
+</RCC>

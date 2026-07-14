@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "rules": [
+    {"executable":"clash-verge.exe","impact":3,"defaultSelected":false,"stoppable":true,"category":"Proxy / VPN","reason":"Graphical proxy client"},
+    {"executable":"verge-mihomo.exe","impact":3,"defaultSelected":true,"stoppable":true,"category":"Proxy / VPN","reason":"Proxy or TUN network core"},
+    {"executable":"mihomo.exe","impact":3,"defaultSelected":true,"stoppable":true,"category":"Proxy / VPN","reason":"Proxy or TUN network core"},
+    {"executable":"clash.exe","impact":3,"defaultSelected":true,"stoppable":true,"category":"Proxy / VPN","reason":"Proxy or TUN network core"},
+    {"executable":"clash-meta.exe","impact":3,"defaultSelected":true,"stoppable":true,"category":"Proxy / VPN","reason":"Proxy or TUN network core"},
+    {"executable":"v2ray.exe","impact":3,"defaultSelected":true,"stoppable":true,"category":"Proxy / VPN","reason":"Proxy network core"},
+    {"executable":"xray.exe","impact":3,"defaultSelected":true,"stoppable":true,"category":"Proxy / VPN","reason":"Proxy network core"},
+    {"executable":"sing-box.exe","impact":3,"defaultSelected":true,"stoppable":true,"category":"Proxy / VPN","reason":"Proxy or TUN network core"},
+    {"executable":"wireguard.exe","impact":3,"defaultSelected":true,"stoppable":true,"category":"Proxy / VPN","reason":"VPN tunnel"},
+    {"executable":"openvpn.exe","impact":3,"defaultSelected":true,"stoppable":true,"category":"Proxy / VPN","reason":"VPN tunnel"},
+    {"executable":"tailscaled.exe","impact":3,"defaultSelected":false,"stoppable":true,"category":"Proxy / VPN","reason":"Mesh VPN service"},
+    {"executable":"zerotier-one.exe","impact":3,"defaultSelected":false,"stoppable":true,"category":"Proxy / VPN","reason":"Virtual network overlay"},
+    {"executable":"warp-svc.exe","impact":3,"defaultSelected":true,"stoppable":true,"category":"Proxy / VPN","reason":"Cloudflare WARP tunnel"},
+    {"executable":"netch.exe","impact":3,"defaultSelected":false,"stoppable":true,"category":"Proxy / VPN","reason":"Traffic routing or accelerator tunnel"},
+    {"executable":"proxifier.exe","impact":3,"defaultSelected":true,"stoppable":true,"category":"Proxy / VPN","reason":"Process proxy or traffic redirection"},
+    {"executable":"qbittorrent.exe","impact":2,"defaultSelected":true,"stoppable":true,"category":"P2P / Downloads","reason":"P2P upload can cause upstream queueing"},
+    {"executable":"utorrent.exe","impact":2,"defaultSelected":true,"stoppable":true,"category":"P2P / Downloads","reason":"P2P upload can cause upstream queueing"},
+    {"executable":"thunder.exe","impact":2,"defaultSelected":true,"stoppable":true,"category":"P2P / Downloads","reason":"Download or upload can use bandwidth"},
+    {"executable":"onedrive.exe","impact":2,"defaultSelected":false,"stoppable":true,"category":"Cloud sync","reason":"Background sync can use upstream bandwidth"},
+    {"executable":"dropbox.exe","impact":2,"defaultSelected":false,"stoppable":true,"category":"Cloud sync","reason":"Background sync can use upstream bandwidth"},
+    {"executable":"obs64.exe","impact":2,"defaultSelected":false,"stoppable":true,"category":"Streaming","reason":"Live streaming can use upstream bandwidth"},
+    {"executable":"easyconnect.exe","impact":3,"defaultSelected":false,"stoppable":false,"category":"Enterprise access","reason":"Detection only; never stopped automatically"},
+    {"executable":"atrustagent.exe","impact":3,"defaultSelected":false,"stoppable":false,"category":"Enterprise access","reason":"Detection only; never stopped automatically"},
+    {"executable":"eaio_service.exe","impact":3,"defaultSelected":false,"stoppable":false,"category":"Enterprise access","reason":"Protected service; detection only"}
+  ]
+}

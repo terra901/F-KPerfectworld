@@ -1,0 +1,21 @@
+# Qt build output and local toolchains
+/bin/
+/build/
+/debug/
+/release/
+/toolchain/
+/tools/
+/downloads/
+
+# qmake-generated files
+Makefile
+Makefile.Debug
+Makefile.Release
+.qmake.stash
+
+# Local editor and operating-system files
+.vscode/
+.idea/
+*.user
+Thumbs.db
+Desktop.ini
