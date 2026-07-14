@@ -1,6 +1,6 @@
 # FUCKPecfectWorld
 
-![FUCKPecfectWorld application screenshot](resources/readme/9f4ec66a21572bb01d181398776ce561.png)
+![FUCKPecfectWorld application screenshot](./resources/readme/9f4ec66a21572bb01d181398776ce561.png)
 
 一个 Windows Qt Widgets 小工具，用于启动 CS2 前扫描并关闭可能影响网络的程序，并在游戏结束后恢复程序或重启 Logi Options+。
 
