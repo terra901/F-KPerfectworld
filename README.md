@@ -16,27 +16,26 @@
 
 ## 运行
 
-直接运行 `D:\FUCKPerfectWorld\bin\FUCKPecfectWorld.exe`。程序请求管理员权限，以便关闭 VPN 和网络服务进程；每次关闭都需要确认。
+直接运行 `.\bin\FUCKPecfectWorld.exe`。程序请求管理员权限，以便关闭 VPN 和网络服务进程；每次关闭都需要确认。
 
 ## 工具链和下载位置
 
 本项目已使用 Qt 5.15.2 MinGW 8.1 64-bit 成功构建并部署运行库。
 
-- Qt 与 MinGW 安装位置：`D:\FUCKPerfectWorld\toolchain`
-- 原始 Qt/MinGW `.7z` 下载归档：`D:\FUCKPerfectWorld\downloads\qt-archives`
-- `aqtinstall` 及依赖：`D:\FUCKPerfectWorld\tools\aqtinstall`
-- Python 包下载缓存：`D:\FUCKPerfectWorld\downloads\pip-cache`
-- 可执行程序及依赖 DLL：`D:\FUCKPerfectWorld\bin`
+- Qt 与 MinGW 安装位置：`.\toolchain`
+- 原始 Qt/MinGW `.7z` 下载归档：`.\downloads\qt-archives`
+- `aqtinstall` 及依赖：`.\tools\aqtinstall`
+- Python 包下载缓存：`.\downloads\pip-cache`
+- 可执行程序及依赖 DLL：`.\bin`
 
 优先尝试了清华 TUNA 镜像和中科大 USTC 镜像。TUNA 对 Qt 5.15.2 归档返回校验不一致，USTC 缺少该版本元数据，因此没有跳过哈希校验，而是回退到 Qt 官方源；官方源实际重定向到可验证镜像并完成校验。
 
 ## 重新构建
 
-双击 `D:\FUCKPerfectWorld\build_release.bat`，或在命令行执行：
+双击 `.\build_release.bat`，或在仓库根目录的命令行执行：
 
 ```bat
-cd /d D:\FUCKPerfectWorld
-build_release.bat
+.\build_release.bat
 ```
 
 脚本会调用项目内的 Qt/MinGW，并把 EXE 所需的 Qt DLL、MinGW 运行库及 `platforms\qwindows.dll` 更新到 `bin`。
