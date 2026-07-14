@@ -10,9 +10,21 @@ permissions:
 
 jobs:
   release:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
       - uses: actions/checkout@v4
+      - uses: jurplel/install-qt-action@v4
+        with:
+          version: 5.15.2
+          arch: win64_mingw81
+      - name: Build Windows package
+        shell: cmd
+        run: |
+          qmake FUCKPecfectWorld.pro
+          mingw32-make release
+          windeployqt --release --compiler-runtime bin\FUCKPecfectWorld.exe
+          copy resources\default_rules.json bin\rules.json
+          powershell -NoProfile -Command "Compress-Archive -Path bin\* -DestinationPath FUCKPecfectWorld-v0.1.0-windows-x64.zip"
       - uses: softprops/action-gh-release@v2
         with:
           name: FUCKPecfectWorld ${{ github.ref_name }}
@@ -22,3 +34,4 @@ jobs:
             Windows utility for reviewing processes that may affect CS2 network latency before launching the game.
 
             Rules are transparent and configurable through `rules.json`. The tool only acts on items explicitly selected by the user.
+          files: FUCKPecfectWorld-v0.1.0-windows-x64.zip
