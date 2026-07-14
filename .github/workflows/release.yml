@@ -1,0 +1,24 @@
+name: Create release
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: softprops/action-gh-release@v2
+        with:
+          name: FUCKPecfectWorld ${{ github.ref_name }}
+          body: |
+            ## About
+
+            Windows utility for reviewing processes that may affect CS2 network latency before launching the game.
+
+            Rules are transparent and configurable through `rules.json`. The tool only acts on items explicitly selected by the user.
